@@ -1,12 +1,21 @@
-import { Text, View } from 'react-native';
+import { ActivityIndicator, Text, View } from 'react-native';
 
+import { Categories } from './screens';
 import styles from './styles';
+import { useFonts } from 'expo-font';
 
 const App = () => {
-    return (
-        <View style={styles.container}>
-            <Text>BakeryApp</Text>
-        </View>
-    );
+    const [loaded] = useFonts({
+        'Caveat-variable': require('../assets/fonts/Caveat-VariableFont_wght.ttf'),
+        'Rancho-Regular': require('../assets/fonts/Rancho-Regular.ttf'),
+    });
+    if (!loaded) {
+        return (
+            <View style={styles.container}>
+                <ActivityIndicator size="large" color="#0000ff" />
+            </View>
+        );
+    }
+    return <Categories />;
 };
 export default App;
