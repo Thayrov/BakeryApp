@@ -1,6 +1,6 @@
 import { ActivityIndicator, Text, View } from 'react-native';
 
-import { Categories } from './screens';
+import AppNavigator from './navigation';
 import styles from './styles';
 import { useFonts } from 'expo-font';
 
@@ -16,6 +16,6 @@ const App = () => {
             </View>
         );
     }
-    return <Categories />;
+    return <AppNavigator />;
 };
 export default App;
