@@ -1,32 +1,34 @@
+import { THEME } from '../theme';
+
 export const CATEGORIES = [
     {
         id: 1,
         title: 'Harinas Puras',
-        color: '#FFD151',
+        color: THEME.colors.PrimaryColor,
     },
     {
         id: 2,
         title: 'Harinas Integrales',
-        color: '#FFDDA1',
+        color: THEME.colors.SecondaryColor,
     },
     {
         id: 3,
         title: 'Harinas de Trigo',
-        color: '#F8C537',
+        color: THEME.colors.ComplementaryColor2,
     },
     {
         id: 4,
         title: 'Harinas de Maíz',
-        color: '#EDB230',
+        color: THEME.colors.PrimaryColor,
     },
     {
         id: 5,
         title: 'Harinas de Centeno',
-        color: '#E77728',
+        color: THEME.colors.SecondaryColor,
     },
     {
         id: 6,
         title: 'Harinas de Cebada',
-        color: '#F6BA13',
+        color: THEME.colors.ComplementaryColor2,
     },
 ];
