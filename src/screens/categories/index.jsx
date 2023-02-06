@@ -1,12 +1,13 @@
 import { Text, View } from 'react-native';
 
+import React from 'react';
 import styles from './styles';
 
-const App = () => {
+const Categories = () => {
     return (
         <View style={styles.container}>
-            <Text>BakeryApp</Text>
+            <Text>BakeryCategories</Text>
         </View>
     );
 };
-export default App;
+export default Categories;

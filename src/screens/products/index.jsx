@@ -1,12 +1,13 @@
 import { Text, View } from 'react-native';
 
+import React from 'react';
 import styles from './styles';
 
-const App = () => {
+const Products = () => {
     return (
         <View style={styles.container}>
-            <Text>BakeryApp</Text>
+            <Text>BakeryProducts</Text>
         </View>
     );
 };
-export default App;
+export default Products;
