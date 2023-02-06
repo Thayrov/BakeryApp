@@ -1,8 +1,8 @@
 import { Button, Text, View } from 'react-native';
 
 import React from 'react';
+import { THEME } from '../../constants/theme';
 import styles from './styles';
-import { theme } from '../../constants/theme';
 
 const Products = ({ navigation }) => {
     return (
@@ -11,7 +11,7 @@ const Products = ({ navigation }) => {
             <Button
                 title="Go to Details"
                 onPress={() => navigation.navigate('Details')}
-                color={theme.colors.SecondaryColor}
+                color={THEME.colors.SecondaryColor}
             />
         </View>
     );

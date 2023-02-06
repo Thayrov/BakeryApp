@@ -1,7 +1,7 @@
 import { Categories, Details, Products } from '../screens';
 
+import { THEME } from '../constants/theme';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { theme } from '../constants/theme';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,10 +13,10 @@ const ShopNavigator = () => {
                 component={Categories}
                 options={{
                     title: 'Categories',
-                    headerTintColor: theme.colors.SecondaryColor,
+                    headerTintColor: THEME.colors.SecondaryColor,
                     headerTitleStyle: {
                         fontFamily: 'Caveat-variable',
-                        color: theme.colors.TextColor,
+                        color: THEME.colors.TextColor,
                     },
                 }}
             />
@@ -25,10 +25,10 @@ const ShopNavigator = () => {
                 component={Details}
                 options={{
                     title: 'Details',
-                    headerTintColor: theme.colors.SecondaryColor,
+                    headerTintColor: THEME.colors.SecondaryColor,
                     headerTitleStyle: {
                         fontFamily: 'Caveat-variable',
-                        color: theme.colors.TextColor,
+                        color: THEME.colors.TextColor,
                     },
                 }}
             />
@@ -37,10 +37,10 @@ const ShopNavigator = () => {
                 component={Products}
                 options={{
                     title: 'Products',
-                    headerTintColor: theme.colors.SecondaryColor,
+                    headerTintColor: THEME.colors.SecondaryColor,
                     headerTitleStyle: {
                         fontFamily: 'Caveat-variable',
-                        color: theme.colors.TextColor,
+                        color: THEME.colors.TextColor,
                     },
                 }}
             />

@@ -1,4 +1,4 @@
-export const theme = {
+export const THEME = {
     colors: {
         PrimaryColor: '#AA998F', // Cinereous
         BGColor: '#F9EAE1', // Linen
