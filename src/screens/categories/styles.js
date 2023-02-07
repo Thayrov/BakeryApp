@@ -8,16 +8,12 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: THEME.colors.BGColor,
-        marginTop: StatusBar.currentHeight,
-    },
-    title: {
-        fontSize: ((height * width) / 1000) * 0.04,
-        fontFamily: 'Rancho-Regular',
-        color: THEME.colors.TextColor,
-        padding: height * 0.01,
     },
     containerList: {
         flex: 1,
+    },
+    contentContainerList: {
+        padding: ((height * width) / 1000) * 0.08,
     },
 });
 

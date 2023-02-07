@@ -20,7 +20,7 @@ const ShopNavigator = () => {
                 navigationBarColor: THEME.colors.SecondaryColor,
                 headerTitleStyle: {
                     fontFamily: 'Caveat-variable',
-                    fontSize: ((height * width) / 1000) * 0.13,
+                    fontSize: ((height * width) / 1000) * 0.1,
                     color: THEME.colors.BGColor,
                 },
             }}>
@@ -39,9 +39,7 @@ const ShopNavigator = () => {
             <Stack.Screen
                 name="Details"
                 component={Details}
-                options={{
-                    title: 'Details',
-                }}
+                options={({ route }) => ({ title: route.params.title })}
             />
         </Stack.Navigator>
     );

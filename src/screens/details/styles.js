@@ -1,5 +1,8 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
+
 import { THEME } from '../../constants/theme';
+
+const { width, height } = Dimensions.get('screen');
 
 const styles = StyleSheet.create({
     container: {
@@ -9,10 +12,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     title: {
-        fontSize: 20,
+        fontSize: ((height * width) / 1000) * 0.1,
         fontFamily: 'Rancho-Regular',
         color: THEME.colors.TextColor,
-        padding: 10,
+        padding: ((height * width) / 1000) * 0.02,
     },
 });
 
