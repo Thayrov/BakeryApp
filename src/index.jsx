@@ -1,6 +1,6 @@
 import { ActivityIndicator, Text, View } from 'react-native';
 
-import AppNavigator from './navigation';
+import AppNavigator from './navigation/index';
 import { THEME } from './constants/theme';
 import styles from './styles';
 import { useFonts } from 'expo-font';
