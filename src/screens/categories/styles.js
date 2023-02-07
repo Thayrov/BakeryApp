@@ -1,4 +1,4 @@
-import { Dimensions, StatusBar, StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 
 import { THEME } from '../../constants/theme';
 
