@@ -1,10 +1,9 @@
 import { Dimensions } from 'react-native';
-import Orders from '../screens';
+import { Orders } from '../screens';
 import { THEME } from '../constants/theme';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const { width, height } = Dimensions.get('screen');
-
 const Stack = createNativeStackNavigator();
 
 const OrdersNavigator = () => {

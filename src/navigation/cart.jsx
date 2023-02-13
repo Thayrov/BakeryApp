@@ -1,4 +1,4 @@
-import Cart from '../screens';
+import { Cart } from '../screens';
 import { Dimensions } from 'react-native';
 import { THEME } from '../constants/theme';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
