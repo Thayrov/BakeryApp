@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: THEME.colors.BGColor,
-        margin: ((height * width) / 1000) * 0.04,
     },
     title: {
         fontSize: ((height * width) / 1000) * 0.1,
@@ -21,7 +20,6 @@ const styles = StyleSheet.create({
         backgroundColor: THEME.colors.ComplementaryColor1,
     },
     footer: {
-        margin: ((height * width) / 1000) * 0.04,
         padding: ((height * width) / 1000) * 0.04,
         backgroundColor: THEME.colors.ComplementaryColor2,
         borderTopColor: THEME.colors.PrimaryColor,
@@ -29,31 +27,41 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
     },
     confirm: {
-        backgroundColor: THEME.colors.WarningColor,
+        backgroundColor: THEME.colors.SecondaryColor,
         borderRadius: 10,
         paddingHorizontal: 20,
         paddingVertical: 15,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 1,
+        },
+        shadowOpacity: 0.22,
+        shadowRadius: 2.22,
+        elevation: 3,
     },
     confirmText: {
         fontFamily: 'Caveat-variable',
-        color: THEME.colors.TextColor,
+        color: THEME.colors.ComplementaryColor1,
         fontSize: ((height * width) / 1000) * 0.08,
     },
     totalContainer: {
+        flex: 0.4,
+        justifyContent: 'space-between',
         flexDirection: 'row',
         paddingEnd: ((height * width) / 1000) * 0.02,
     },
     totalText: {
         fontFamily: 'Caveat-variable',
-        color: THEME.colors.TextColor,
+        color: THEME.colors.ComplementaryColor1,
         fontSize: ((height * width) / 1000) * 0.08,
     },
     totalPrice: {
         fontFamily: 'Caveat-variable',
-        color: THEME.colors.TextColor,
+        color: THEME.colors.ComplementaryColor1,
         fontSize: ((height * width) / 1000) * 0.08,
     },
 });

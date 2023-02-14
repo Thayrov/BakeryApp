@@ -7,10 +7,11 @@ const { width, height } = Dimensions.get('screen');
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        margin: ((height * width) / 1000) * 0.04,
-        height: ((height * width) / 1000) * 0.7,
-
+        marginTop: ((height * width) / 1000) * 0.04,
+        marginHorizontal: ((height * width) / 1000) * 0.04,
+        flexDirection: 'row',
         backgroundColor: THEME.colors.SecondaryColor,
+        justifyContent: 'space-between',
         borderWidth: 1,
         borderRadius: 5,
         borderColor: THEME.colors.PrimaryColor,
@@ -25,38 +26,38 @@ const styles = StyleSheet.create({
         paddingVertical: ((height * width) / 1000) * 0.02,
     },
     contentContainer: {
-        flex: 1,
+        flex: 0.5,
+        alignItems: 'flex-end',
         flexDirection: 'row',
-        justifyContent: 'space-around',
-        borderRadius: 10,
-        alignItems: 'center',
-        shadowColor: THEME.colors.ComplementaryColor2,
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.23,
-        shadowRadius: 2.62,
-        elevation: 4,
-        paddingHorizontal: ((height * width) / 1000) * 0.3,
+        justifyContent: 'space-between',
     },
-
+    icon: {
+        paddingTop: ((height * width) / 1000) * 0.03,
+        paddingHorizontal: ((height * width) / 1000) * 0.01,
+    },
     title: {
+        flex: 0.3,
+
         fontSize: ((height * width) / 1000) * 0.1,
         fontFamily: 'Caveat-variable',
         color: THEME.colors.TextColor,
-        padding: height * 0.01,
+        paddingTop: ((height * width) / 1000) * 0.02,
+        paddingHorizontal: ((height * width) / 1000) * 0.01,
     },
 
     quantity: {
-        fontSize: ((height * width) / 1000) * 0.1,
+        fontSize: ((height * width) / 1000) * 0.08,
         fontFamily: 'Caveat-variable',
         color: THEME.colors.TextColor,
+        paddingTop: ((height * width) / 1000) * 0.02,
+        paddingHorizontal: ((height * width) / 1000) * 0.01,
     },
     price: {
-        fontSize: ((height * width) / 1000) * 0.1,
+        fontSize: ((height * width) / 1000) * 0.08,
         fontFamily: 'Caveat-variable',
         color: THEME.colors.TextColor,
+        paddingTop: ((height * width) / 1000) * 0.02,
+        paddingHorizontal: ((height * width) / 1000) * 0.01,
     },
 });
 

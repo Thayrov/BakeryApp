@@ -8,6 +8,12 @@ import styles from './styles';
 const CartItem = ({ item, onDelete }) => {
     return (
         <View style={styles.container}>
+            <MaterialCommunityIcons
+                style={styles.icon}
+                name="barley"
+                size={24}
+                color={THEME.colors.WarningColor}
+            />
             <View>
                 <Text style={styles.title}>{item.title}</Text>
             </View>
@@ -17,6 +23,7 @@ const CartItem = ({ item, onDelete }) => {
             </View>
             <TouchableOpacity onPress={() => onDelete(item.id)}>
                 <MaterialCommunityIcons
+                    style={styles.icon}
                     name="trash-can"
                     size={24}
                     color={THEME.colors.WarningColor}
