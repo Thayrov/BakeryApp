@@ -1,21 +1,32 @@
-import { FlatList } from 'react-native-gesture-handler';
-import { PRODUCTS } from '../../constants/data';
+import { FlatList, SafeAreaView } from 'react-native';
+import React, { useEffect } from 'react';
+import { filterProduct, selectProduct } from '../../store/actions';
+import { useDispatch, useSelector } from 'react-redux';
+
 import { ProductItem } from '../../components';
-import React from 'react';
-import { SafeAreaView } from 'react-native';
 import styles from './styles';
 
-const Products = ({ navigation, route }) => {
-    const { categoryId, title } = route.params;
+const Products = ({ navigation }) => {
+    const dispatch = useDispatch();
+    const category = useSelector((state) => state.category.selected);
+    //FIXME - is not properly showing products screen
+    const filteredProducts = useSelector((state) => state.products.filteredProducts);
+
+    //NOTE - PRODUCTS.filter((product) => product.categoryId === category.id);
+
+    console.warn(filteredProducts);
+
     const onSelected = (item) => {
+        dispatch(selectProduct(item.id));
         navigation.navigate('Details', {
-            productId: item.id,
             title: item.title,
         });
     };
     const renderItem = ({ item }) => <ProductItem item={item} onSelected={onSelected} />;
     const keyExtractor = (item) => item.id.toString();
-    const filteredProducts = PRODUCTS.filter((product) => product.categoryId === categoryId);
+    useEffect(() => {
+        dispatch(filterProduct(category.id));
+    }, []);
 
     return (
         <SafeAreaView style={styles.container}>

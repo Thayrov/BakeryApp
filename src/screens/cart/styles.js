@@ -49,8 +49,8 @@ const styles = StyleSheet.create({
         fontSize: ((height * width) / 1000) * 0.08,
     },
     totalContainer: {
-        flex: 0.4,
-        justifyContent: 'space-between',
+        flex: 0.5,
+        justifyContent: 'flex-start',
         flexDirection: 'row',
         paddingEnd: ((height * width) / 1000) * 0.02,
     },

@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     title: {
         flex: 0.3,
 
-        fontSize: ((height * width) / 1000) * 0.1,
+        fontSize: ((height * width) / 1000) * 0.08,
         fontFamily: 'Caveat-variable',
         color: THEME.colors.TextColor,
         paddingTop: ((height * width) / 1000) * 0.02,
@@ -46,14 +46,14 @@ const styles = StyleSheet.create({
     },
 
     quantity: {
-        fontSize: ((height * width) / 1000) * 0.08,
+        fontSize: ((height * width) / 1000) * 0.07,
         fontFamily: 'Caveat-variable',
         color: THEME.colors.TextColor,
         paddingTop: ((height * width) / 1000) * 0.02,
         paddingHorizontal: ((height * width) / 1000) * 0.01,
     },
     price: {
-        fontSize: ((height * width) / 1000) * 0.08,
+        fontSize: ((height * width) / 1000) * 0.07,
         fontFamily: 'Caveat-variable',
         color: THEME.colors.TextColor,
         paddingTop: ((height * width) / 1000) * 0.02,

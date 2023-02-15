@@ -31,18 +31,18 @@ const styles = StyleSheet.create({
         paddingHorizontal: ((height * width) / 1000) * 0.01,
     },
     date: {
-        fontSize: ((height * width) / 1000) * 0.08,
+        fontSize: ((height * width) / 1000) * 0.07,
         fontFamily: 'Caveat-variable',
         color: THEME.colors.TextColor,
-        paddingTop: ((height * width) / 1000) * 0.02,
+        paddingTop: ((height * width) / 1000) * 0.01,
         paddingHorizontal: ((height * width) / 1000) * 0.01,
     },
 
     total: {
-        fontSize: ((height * width) / 1000) * 0.08,
+        fontSize: ((height * width) / 1000) * 0.07,
         fontFamily: 'Caveat-variable',
         color: THEME.colors.TextColor,
-        paddingTop: ((height * width) / 1000) * 0.02,
+        paddingTop: ((height * width) / 1000) * 0.01,
         paddingHorizontal: ((height * width) / 1000) * 0.01,
     },
 });

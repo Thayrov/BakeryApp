@@ -25,7 +25,7 @@ const Cart = () => {
                 <TouchableOpacity style={styles.confirm} onPress={() => null}>
                     <Text style={styles.confirmText}>Confirm</Text>
                     <View style={styles.totalContainer}>
-                        <Text style={styles.totalText}>Total:</Text>
+                        <Text style={styles.totalText}>Total: </Text>
                         <Text style={styles.totalPrice}>${total}</Text>
                     </View>
                 </TouchableOpacity>
