@@ -6,9 +6,8 @@ import styles from './styles';
 import { useSelector } from 'react-redux';
 
 const Details = ({ navigation }) => {
-    const product = useSelector((state) => state.products.selected);
+    const product = useSelector((state) => state.product.selected);
 
-    //NOTE - const product = PRODUCTS.find((product) => product.id === productId);
     return (
         <View style={styles.container}>
             <Text style={styles.title}>{product.title}</Text>

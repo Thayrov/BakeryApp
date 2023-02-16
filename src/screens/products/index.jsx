@@ -9,12 +9,7 @@ import styles from './styles';
 const Products = ({ navigation }) => {
     const dispatch = useDispatch();
     const category = useSelector((state) => state.category.selected);
-    //FIXME - is not properly showing products screen
-    const filteredProducts = useSelector((state) => state.products.filteredProducts);
-
-    //NOTE - PRODUCTS.filter((product) => product.categoryId === category.id);
-
-    console.warn(filteredProducts);
+    const filteredProducts = useSelector((state) => state.product.filteredProducts);
 
     const onSelected = (item) => {
         dispatch(selectProduct(item.id));

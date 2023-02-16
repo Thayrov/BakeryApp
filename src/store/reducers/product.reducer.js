@@ -21,7 +21,7 @@ const productReducer = (state = initialState, action) => {
             return {
                 ...state,
                 filteredProducts: state.products.filter(
-                    (product) => product.categoryId === action.categoryId
+                    (product) => product.categoryId === action.categoryID
                 ),
             };
         }
