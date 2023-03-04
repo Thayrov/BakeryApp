@@ -64,6 +64,18 @@ const styles = StyleSheet.create({
         color: THEME.colors.ComplementaryColor1,
         fontSize: ((height * width) / 1000) * 0.08,
     },
+    header: {
+        flex: 1,
+        padding: ((height * width) / 1000) * 0.13,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: THEME.colors.ComplementaryColor1,
+    },
+    headerTitle: {
+        fontFamily: 'Rancho-Regular',
+        fontSize: ((height * width) / 1000) * 0.1,
+        textAlign: 'center',
+    },
 });
 
 export default styles;
