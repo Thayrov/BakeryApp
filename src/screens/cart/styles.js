@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     },
     totalContainer: {
         flex: 0.5,
-        justifyContent: 'flex-start',
+        justifyContent: 'flex-end',
         flexDirection: 'row',
         paddingEnd: ((height * width) / 1000) * 0.02,
     },

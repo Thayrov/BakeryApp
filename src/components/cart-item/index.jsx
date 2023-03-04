@@ -11,13 +11,13 @@ const CartItem = ({ item, onDelete }) => {
             <MaterialCommunityIcons
                 style={styles.icon}
                 name="barley"
-                size={24}
+                size={20}
                 color={THEME.colors.WarningColor}
             />
-            <View>
+            <View style={styles.contentContainer}>
                 <Text style={styles.title}>{item.title}</Text>
             </View>
-            <View style={styles.contentContainer}>
+            <View style={styles.contentContainer2}>
                 <Text style={styles.price}>${item.price}</Text>
                 <Text style={styles.quantity}>x{item.quantity}</Text>
             </View>
@@ -25,7 +25,7 @@ const CartItem = ({ item, onDelete }) => {
                 <MaterialCommunityIcons
                     style={styles.icon}
                     name="trash-can"
-                    size={24}
+                    size={20}
                     color={THEME.colors.WarningColor}
                 />
             </TouchableOpacity>

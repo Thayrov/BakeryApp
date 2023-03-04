@@ -19,6 +19,7 @@ const cartReducer = (state = initialState, action) => {
                 });
             } else {
                 const item = { ...action.item, quantity: 1 };
+                updatedCart = [...state.items, item];
             }
             return {
                 ...state,

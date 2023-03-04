@@ -26,23 +26,26 @@ const styles = StyleSheet.create({
         paddingVertical: ((height * width) / 1000) * 0.02,
     },
     contentContainer: {
-        flex: 0.5,
-        alignItems: 'flex-end',
+        flex: 0.6,
+        alignItems: 'center',
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-start',
+    },
+    contentContainer2: {
+        flex: 0.4,
+        alignItems: 'center',
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
     },
     icon: {
         paddingTop: ((height * width) / 1000) * 0.03,
         paddingHorizontal: ((height * width) / 1000) * 0.01,
     },
     title: {
-        flex: 0.3,
-
         fontSize: ((height * width) / 1000) * 0.08,
         fontFamily: 'Caveat-variable',
         color: THEME.colors.TextColor,
         paddingTop: ((height * width) / 1000) * 0.02,
-        paddingHorizontal: ((height * width) / 1000) * 0.01,
     },
 
     quantity: {
@@ -50,14 +53,14 @@ const styles = StyleSheet.create({
         fontFamily: 'Caveat-variable',
         color: THEME.colors.TextColor,
         paddingTop: ((height * width) / 1000) * 0.02,
-        paddingHorizontal: ((height * width) / 1000) * 0.01,
+        paddingHorizontal: ((height * width) / 1000) * 0.03,
     },
     price: {
         fontSize: ((height * width) / 1000) * 0.07,
         fontFamily: 'Caveat-variable',
         color: THEME.colors.TextColor,
         paddingTop: ((height * width) / 1000) * 0.02,
-        paddingHorizontal: ((height * width) / 1000) * 0.01,
+        paddingHorizontal: ((height * width) / 1000) * 0.03,
     },
 });
 

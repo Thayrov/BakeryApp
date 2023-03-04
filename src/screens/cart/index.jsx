@@ -30,7 +30,6 @@ const Cart = ({ navigation }) => {
                 </TouchableOpacity>
             </View>
         );
-
     return (
         <View style={styles.container}>
             <View style={styles.listContainer}>
