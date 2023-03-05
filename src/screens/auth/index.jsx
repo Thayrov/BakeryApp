@@ -7,17 +7,24 @@ import {
     TouchableOpacity,
     View,
 } from 'react-native';
+import { signIn, signUp } from '../../store/actions';
 
 import { THEME } from '../../constants/theme';
 import { styles } from './styles';
+import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 
 const Auth = ({ navigation }) => {
+    const dispatch = useDispatch();
     const [isLogin, setIsLogin] = useState(true);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const title = isLogin ? 'Login' : 'Register';
     const message = isLogin ? "Don't have an account?" : 'Already have an account?';
     const messageButton = isLogin ? 'Login' : 'Register';
-
+    const onHandlerSubmit = () => {
+        dispatch(isLogin ? signIn(email, password) : signUp(email, password));
+    };
     return (
         <KeyboardAvoidingView
             style={styles.keyboardContainer}
@@ -33,7 +40,8 @@ const Auth = ({ navigation }) => {
                         placeholderTextColor={THEME.colors.NeutralColor}
                         autoCapitalize="none"
                         autoCorrect={false}
-                        onChangeText={() => {}}
+                        onChangeText={(text) => setEmail(text)}
+                        value={email}
                     />
                     <Text style={styles.label}>Password</Text>
                     <TextInput
@@ -42,14 +50,15 @@ const Auth = ({ navigation }) => {
                         placeholderTextColor={THEME.colors.NeutralColor}
                         autoCapitalize="none"
                         autoCorrect={false}
-                        onChangeText={() => {}}
+                        onChangeText={(text) => setPassword(text)}
                         secureTextEntry
+                        value={password}
                     />
                     <View style={styles.buttonContainer}>
                         <Button
                             title={messageButton}
                             color={THEME.colors.PrimaryColor}
-                            onPress={() => {}}
+                            onPress={onHandlerSubmit}
                         />
                         <View style={styles.prompt}>
                             <TouchableOpacity
