@@ -15,14 +15,14 @@ export const styles = StyleSheet.create({
         backgroundColor: THEME.colors.BGColor,
     },
     content: {
-        width: ((height * width) / 1000) * 1.1,
-        maxWidth: ((height * width) / 1000) * 1.3,
+        width: (height * width) / 1000,
+        maxWidth: ((height * width) / 1000) * 0.8,
         padding: ((height * width) / 1000) * 0.07,
         borderColor: THEME.colors.ComplementaryColor2,
         borderWidth: 1,
         backgroundColor: THEME.colors.ComplementaryColor1,
         borderRadius: 5,
-        minHeight: ((height * width) / 1000) * 1.7,
+        minHeight: ((height * width) / 1000) * 1.6,
     },
     title: {
         fontSize: ((height * width) / 1000) * 0.1,
