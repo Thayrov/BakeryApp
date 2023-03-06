@@ -15,13 +15,14 @@ export const styles = StyleSheet.create({
         backgroundColor: THEME.colors.BGColor,
     },
     content: {
-        width: (height * width) / 1000,
-        maxWidth: ((height * width) / 1000) * 0.9,
+        width: ((height * width) / 1000) * 1.1,
+        maxWidth: ((height * width) / 1000) * 1.3,
         padding: ((height * width) / 1000) * 0.07,
         borderColor: THEME.colors.ComplementaryColor2,
         borderWidth: 1,
         backgroundColor: THEME.colors.ComplementaryColor1,
         borderRadius: 5,
+        minHeight: ((height * width) / 1000) * 1.7,
     },
     title: {
         fontSize: ((height * width) / 1000) * 0.1,
@@ -33,13 +34,7 @@ export const styles = StyleSheet.create({
         fontFamily: 'Caveat-variable',
         marginTop: ((height * width) / 1000) * 0.02,
     },
-    input: {
-        height: ((height * width) / 1000) * 0.2,
-        borderBottomColor: THEME.colors.PrimaryColor,
-        borderBottomWidth: 1,
-        fontFamily: 'Caveat-variable',
-        marginBottom: ((height * width) / 1000) * 0.05,
-    },
+
     buttonContainer: {
         marginVertical: ((height * width) / 1000) * 0.05,
     },
